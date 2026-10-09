@@ -1,0 +1,75 @@
+.job-info,
+.job-extra{
+    display:flex;
+    justify-content:space-between;
+    margin:20px 0;
+    color:#666;
+    font-size:15px;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.job-info span,
+.job-extra span{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.job-type{
+    background:#e9f8f6;
+    color:#18c3b3;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.job-footer button{
+    background:#18c3b3;
+    color:#fff;
+    border:none;
+    padding:10px 22px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.job-footer button:hover{
+    background:#0ea293;
+    transform:translateY(-2px);
+}
+
+.job-link{
+    text-decoration:none;
+}
+
+.job-footer button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:10px 22px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.job-footer button:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+@media(max-width:576px){
+
+.job-info,
+.job-extra,
+.job-footer{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:12px;
+}
+
+.job-footer button{
+    width:100%;
+}
+}
