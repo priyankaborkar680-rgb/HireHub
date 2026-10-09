@@ -1,0 +1,182 @@
+.featured {
+  background: #f8fafc;
+  padding: 90px 8%;
+}
+
+.featured-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.featured-header h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.featured-header p {
+  color: #64748b;
+  font-size: 17px;
+}
+
+.jobs-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 30px;
+}
+
+.job-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 25px;
+  transition: 0.35s;
+  box-shadow: 0 10px 30px rgba(0,0,0,.06);
+  border: 1px solid #edf2f7;
+}
+
+.job-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0,0,0,.12);
+}
+
+.job-top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.job-top img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
+
+.job-top h3 {
+  font-size: 18px;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.job-top span {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.job-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  color: #475569;
+  font-size: 15px;
+}
+
+.job-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.salary {
+  color: #14b8a6;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.apply-btn {
+  background: #14b8a6;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.apply-btn:hover {
+  background: #0f766e;
+}
+
+/* ---------- Tablet ---------- */
+
+@media(max-width:992px){
+
+.featured{
+padding:80px 6%;
+}
+
+.featured-header h2{
+font-size:36px;
+}
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:768px){
+
+.featured{
+padding:70px 20px;
+}
+
+.featured-header h2{
+font-size:30px;
+}
+
+.featured-header p{
+font-size:15px;
+}
+
+.jobs-container{
+grid-template-columns:1fr;
+}
+
+.job-card{
+padding:22px;
+}
+
+.job-top img{
+width:48px;
+height:48px;
+}
+
+.job-top h3{
+font-size:17px;
+}
+
+.salary{
+font-size:20px;
+}
+
+.apply-btn{
+padding:10px 18px;
+font-size:14px;
+}
+
+}
+
+/* ---------- Small Mobile ---------- */
+
+@media(max-width:480px){
+
+.featured-header h2{
+font-size:26px;
+}
+
+.job-info{
+flex-direction:column;
+gap:8px;
+}
+
+.job-bottom{
+flex-direction:column;
+align-items:flex-start;
+gap:15px;
+}
+
+.apply-btn{
+width:100%;
+}
+
+}
